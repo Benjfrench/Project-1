@@ -1,49 +1,342 @@
 @font-face {
-    font-family: 'SimpsonFont';
-    src: url(Simpsonfont\ DEMO.otf)
-  }
-  
-
-h1{
-    text-align: center;
-    padding: 10%;
+  font-family: "SimpsonFont";
+  src: url(Simpsonfont\ DEMO.otf);
 }
 
-/* styles.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  font-family: "SimpsonFont";
+  color:#4ba1f7;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.SeasonInfo {
+  border: 5px solid #4ba1f7;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff3b1;
+}
+
+.UserKey {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  min-width: 120px;
+  font-family: "SimpsonFont";
+  font-size: large;
+  color:#4ba1f7;
+}
+
+.UserValue {
+  flex: 1 1 auto;
+}
+
+@media (max-width: 660px) {
+  h1 {
+    padding-top: 20%;
+  }
+}
+
 footer {
-    background-color: #333; /* Dark background color */
-    color: white; /* White text color */
-    text-align: center; /* Center-align text */
-    padding: 20px 0; /* Padding on top and bottom */
-    position: fixed; /* Fixed position at the bottom */
-    width: 100%; /* Full width */
-    bottom: 0; /* Align to bottom */
-    font-size: 14px; /* Font size */
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  padding-bottom: 60px; /* Adjust as needed */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 footer a {
-    color: #ffd700; /* Gold color for links */
-    text-decoration: none; /* Remove underline */
-    margin: 0 10px; /* Margin between links */
+  color: #ffd700; /* Gold color for links */
+  text-decoration: none; /* Remove underline */
+  margin: 0 10px; /* Margin between links */
+}
+
+body {
+  background-color:#ffd700;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid #ffd700;
+  color: #ffd700;
+  border-radius: 5px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffd700;
+  color: white;
 }
 
 footer a:hover {
-    text-decoration: underline; /* Underline on hover */
+  text-decoration: underline; /* Underline on hover */
 }
 
 .navbar {
-    background-image: linear-gradient(to bottom, #4ba1f7,#82C2E2);
-  }
-  
-  .navbar-brand:hover {
-    transform: scale(1.1);
-    font-family:'SimpsonFont', sans-serif;
-    color: #ffd700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to bottom, #4ba1f7, #82c2e2);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+  font-family: "SimpsonFont", sans-serif;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  font-family: "SimpsonFont", sans-serif;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.articles-container {
+  flex: 1;
+  max-width: 50%;
+}
+
+.image-container {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #4ba1f7;
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
   }
 
-.navbar-brand{
-    font-family:'SimpsonFont', sans-serif;
-    color: #ffd700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  .articles-container, .image-container {
+    max-width: 100%;
+  }
+
+  .image-container {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 660px) {
+  h1 {
+    padding-top: 20%;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .articles-container, .image-container {
+    max-width: 100%;
+  }
+}
+
+.HomePage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("The_Simpsons_Logo.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.card {
+padding: 10px;
+}
+.card-title {
+font-weight: 600;
+font-size: 3em;
+padding: 0 0 10px 0;
+}
+.card-description { font-weight: 400;
+font-size: 2em
+}
+
+.search-btn{
+  background-color: #4ba1f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#posts-container {
+  background-color: #ffed87;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative; /* Ensure it is positioned */
+  z-index: 1; /* Lower z-index value */
+  margin-top: 70px; /* Add margin to avoid overlap with navbar */
+  overflow: auto; /* Enable overflow if needed */
+}
+
+#posts-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card{
+  background-color: #82c2e2;
+  color: #00516c;
+}
+
+.card-title{
+font-size: medium;
+font-family: "SimpsonFont";
+}
+
+.card-season-episode{
+font-size: medium;
+font-family: "SimpsonFont";
+}
+
+.card-rating{
+font-size: medium;
+font-family: "SimpsonFont";
+}
+
+.card-description{
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#ratingFilter{
+  margin: 10px;
+  background-color: #ffed87;
+  font-family: "SimpsonFont";
+  color: #4ba1f7;
+}
+
+#seasonFilter{
+  margin: 10px;
+  background-color: #ffed87;
+  font-family: "SimpsonFont";
+  color: #4ba1f7;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+#filterDescriptor {
+  display: flex;
+  align-items: center; /* Align text vertically in the center */
+  margin: 0 10px; /* Add margin between descriptors */
+}
+
+#filterDescriptor p {
+  margin: 0; /* Remove default margin from <p> */
+  font-family: "SimpsonFont";
+  color: #4ba1f7;
+  white-space: nowrap; /* Prevent text from wrapping */
+  display: flex;
+  align-items: center; /* Ensure text is vertically centered */
+}
+
+#ratingFilter {
+  margin: 10px;
+  background-color: #ffed87;
+  font-family: "SimpsonFont";
+  color: #4ba1f7;
+}
+
+#seasonFilter {
+  margin: 10px;
+  background-color: #ffed87;
+  font-family: "SimpsonFont";
+  color: #4ba1f7;
+}
+
+@media (max-width: 660px) {
+  .filter-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align the items */
+  }
+
+  #filterDescriptor {
+    margin: 5px 0; /* Adjust margin for stacked layout */
+  }
+
+  #seasonFilter, #ratingFilter {
+    width: 100%; /* Make filters take full width */
+    max-width: 300px; /* Optional: Limit max width */
+    margin: 5px 0; /* Adjust margin for stacked layout */
+  }
 }

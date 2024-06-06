@@ -14,69 +14,61 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="HomePage.html">SimpsonBook</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Seasons
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="Season1.html">Season 1</a></li>
-                <li><a class="dropdown-item" href="Season2.html">Season 2</a></li>
-                <li><a class="dropdown-item" href="Season3.html">Season 3</a></li>
-                <li><a class="dropdown-item" href="Season4.html">Season 4</a></li>
-                <li><a class="dropdown-item" href="Season5.html">Season 5</a></li>
-                <li><a class="dropdown-item" href="Season6.html">Season 6</a></li>
-                <li><a class="dropdown-item" href="Season7.html">Season 7</a></li>
-                <li><a class="dropdown-item" href="Season8.html">Season 8</a></li>
-                <li><a class="dropdown-item" href="Season9.html">Season 9</a></li>
-                <li><a class="dropdown-item" href="Season10.html">Season 10</a></li>                
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                    <a class="dropdown-item" href="TreehouseOfHorror.html">Treehouse of Horror</a>
-                </li>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="HomePage.html">SimpsonBook</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Seasons</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Season1.html">Season 1</a></li>
+                  <li><a class="dropdown-item" href="Season2.html">Season 2</a></li>
+                  <li><a class="dropdown-item" href="Season3.html">Season 3</a></li>
+                  <li><a class="dropdown-item" href="Season4.html">Season 4</a></li>
+                  <li><a class="dropdown-item" href="Season5.html">Season 5</a></li>
+                  <li><a class="dropdown-item" href="Season6.html">Season 6</a></li>
+                  <li><a class="dropdown-item" href="Season7.html">Season 7</a></li>
+                  <li><a class="dropdown-item" href="Season8.html">Season 8</a></li>
+                  <li><a class="dropdown-item" href="Season9.html">Season 9</a></li>
+                  <li><a class="dropdown-item" href="Season10.html">Season 10</a></li>                
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                      <a class="dropdown-item" href="TreehouseOfHorror.html">Treehouse of Horror</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="EpisodeSearch.html">Episode Finder</a>
+              </li>
             </ul>
-            <li class="nav-item">
-              <a class="nav-link" href="EpisodeSearch.html">Episode Finder</a>
-            </li>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
-    <h1>Hello, world!</h1>
-
+      </nav>
+  <div class="HomePage">
+    <video id="bgVideo" class="background-video" autoplay>
+      <source src="The_Simpsons_Logo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h1></h1>
+</div>
     <footer>
         <p>&copy; 2024 Your Company. All rights reserved.</p>
         <p>
@@ -85,7 +77,7 @@
             <a href="#contact">Contact</a>
         </p>
     </footer>
-
+  </div>
     
 
     <script
@@ -93,5 +85,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="Project1.js"></script>
   </body>
 </html>
